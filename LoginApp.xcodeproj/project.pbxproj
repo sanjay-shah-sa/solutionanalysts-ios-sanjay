@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3043984C6696799E3583EA63 /* Pods_LoginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12A6903F96392A80DF2D1ED /* Pods_LoginApp.framework */; };
 		CE956C7325A1856500C29EF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C7225A1856500C29EF8 /* AppDelegate.swift */; };
 		CE956C7A25A1856500C29EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE956C7825A1856500C29EF8 /* Main.storyboard */; };
 		CE956C7C25A1856800C29EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE956C7B25A1856800C29EF8 /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B6232E6E63107B0833082D4 /* Pods-LoginApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.release.xcconfig"; path = "Target Support Files/Pods-LoginApp/Pods-LoginApp.release.xcconfig"; sourceTree = "<group>"; };
+		621DD498696E9D813B1F559B /* Pods-LoginApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.debug.xcconfig"; path = "Target Support Files/Pods-LoginApp/Pods-LoginApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE956C6F25A1856500C29EF8 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE956C7225A1856500C29EF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE956C7925A1856500C29EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE956C7B25A1856800C29EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE956C7E25A1856800C29EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE956C8025A1856800C29EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12A6903F96392A80DF2D1ED /* Pods_LoginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3043984C6696799E3583EA63 /* Pods_LoginApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2336C278531C39943AB2B3E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F12A6903F96392A80DF2D1ED /* Pods_LoginApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE956C6625A1856400C29EF8 = {
 			isa = PBXGroup;
 			children = (
 				CE956C7125A1856500C29EF8 /* LoginApp */,
 				CE956C7025A1856500C29EF8 /* Products */,
+				F1B1FB78147FB4CE16A681C7 /* Pods */,
+				2336C278531C39943AB2B3E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +76,16 @@
 			path = LoginApp;
 			sourceTree = "<group>";
 		};
+		F1B1FB78147FB4CE16A681C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				621DD498696E9D813B1F559B /* Pods-LoginApp.debug.xcconfig */,
+				4B6232E6E63107B0833082D4 /* Pods-LoginApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE956C8325A1856800C29EF8 /* Build configuration list for PBXNativeTarget "LoginApp" */;
 			buildPhases = (
+				663FE64755E6B422F00B0956 /* [CP] Check Pods Manifest.lock */,
 				CE956C6B25A1856500C29EF8 /* Sources */,
 				CE956C6C25A1856500C29EF8 /* Frameworks */,
 				CE956C6D25A1856500C29EF8 /* Resources */,
+				560743C9624477E789E704EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +153,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		560743C9624477E789E704EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginApp/Pods-LoginApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		663FE64755E6B422F00B0956 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE956C6B25A1856500C29EF8 /* Sources */ = {
@@ -274,6 +343,7 @@
 		};
 		CE956C8425A1856800C29EF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 621DD498696E9D813B1F559B /* Pods-LoginApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +361,7 @@
 		};
 		CE956C8525A1856800C29EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6232E6E63107B0833082D4 /* Pods-LoginApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
