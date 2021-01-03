@@ -3,7 +3,7 @@
 //  LoginApp
 //
 //  Created by Sanjay Shah on 03/01/2021.
-//  Copyright © 2021 Sanjay Shah. All rights reserved.
+//  Copyright © 2021 Solution Analysts. All rights reserved.
 //
 
 import UIKit

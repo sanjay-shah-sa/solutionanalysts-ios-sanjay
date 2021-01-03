@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		CE956C7A25A1856500C29EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE956C7825A1856500C29EF8 /* Main.storyboard */; };
 		CE956C7C25A1856800C29EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE956C7B25A1856800C29EF8 /* Assets.xcassets */; };
 		CE956C7F25A1856800C29EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE956C7D25A1856800C29EF8 /* LaunchScreen.storyboard */; };
+		CE956C8D25A1877700C29EF8 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C8C25A1877700C29EF8 /* BaseVC.swift */; };
+		CE956C8F25A1878E00C29EF8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C8E25A1878E00C29EF8 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		CE956C7B25A1856800C29EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE956C7E25A1856800C29EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE956C8025A1856800C29EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE956C8C25A1877700C29EF8 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		CE956C8E25A1878E00C29EF8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F12A6903F96392A80DF2D1ED /* Pods_LoginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +71,12 @@
 		CE956C7125A1856500C29EF8 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE956C8B25A1871600C29EF8 /* Service */,
+				CE956C8A25A1870800C29EF8 /* Const */,
+				CE956C8925A1870000C29EF8 /* Extensions */,
+				CE956C8825A186F400C29EF8 /* Model */,
+				CE956C8725A186E600C29EF8 /* ViewController */,
+				CE956C8625A186DB00C29EF8 /* ViewModel */,
 				CE956C7225A1856500C29EF8 /* AppDelegate.swift */,
 				CE956C7825A1856500C29EF8 /* Main.storyboard */,
 				CE956C7B25A1856800C29EF8 /* Assets.xcassets */,
@@ -76,13 +86,56 @@
 			path = LoginApp;
 			sourceTree = "<group>";
 		};
+		CE956C8625A186DB00C29EF8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE956C8725A186E600C29EF8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE956C8C25A1877700C29EF8 /* BaseVC.swift */,
+				CE956C8E25A1878E00C29EF8 /* LoginVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE956C8825A186F400C29EF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE956C8925A1870000C29EF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE956C8A25A1870800C29EF8 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		CE956C8B25A1871600C29EF8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		F1B1FB78147FB4CE16A681C7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				621DD498696E9D813B1F559B /* Pods-LoginApp.debug.xcconfig */,
 				4B6232E6E63107B0833082D4 /* Pods-LoginApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,7 +169,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = "Sanjay Shah";
+				ORGANIZATIONNAME = "Solution Analysts";
 				TargetAttributes = {
 					CE956C6E25A1856500C29EF8 = {
 						CreatedOnToolsVersion = 11.4;
@@ -202,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE956C7325A1856500C29EF8 /* AppDelegate.swift in Sources */,
+				CE956C8D25A1877700C29EF8 /* BaseVC.swift in Sources */,
+				CE956C8F25A1878E00C29EF8 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P33L3TNDPK;
 				INFOPLIST_FILE = LoginApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -365,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P33L3TNDPK;
 				INFOPLIST_FILE = LoginApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
