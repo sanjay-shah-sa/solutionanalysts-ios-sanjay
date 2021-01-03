@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 
 class LoginViewModel {
+    // MARK: - Variables
     var email = BehaviorRelay(value: "")
     var password = BehaviorRelay(value: "")
     var needLogin = PublishSubject<Void>()
@@ -21,6 +22,7 @@ class LoginViewModel {
     var disposeBag = DisposeBag()
     let showLoading = BehaviorRelay<Bool>(value: false)
     
+    // MARK: - init()
     init() {
         emailValid = email
             .asDriver()
@@ -61,6 +63,7 @@ class LoginViewModel {
     }
 }
 
+// MARK: - Login API Call With Rx
 extension LoginViewModel {
     func logIn(email: String, password: String) -> Observable<UserRes> {
         return Observable.create { observer in
@@ -72,7 +75,11 @@ extension LoginViewModel {
                 .do(onSuccess: { (res) in },
                     afterSuccess: { (res) in
                         self.showLoading.accept(false)
-                        let httpHeaders = res.response
+                        let httpHeaders = res.response?.allHeaderFields as? [String: Any]
+                        // Save User Token into Preference
+                        Helper.shared.saveToken(httpHeaders: httpHeaders)
+                        // Get User Token into Preference
+                        // let token = Helper.shared.getToken()
                 }, onError: { (error) in
                     self.showLoading.accept(false)
                 })

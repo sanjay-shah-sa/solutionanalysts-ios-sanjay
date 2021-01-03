@@ -22,4 +22,11 @@ extension UIViewController: NVActivityIndicatorViewable {
     func hideLoading() {
         stopAnimating()
     }
+    
+    func showMessage(title: String? = nil, message: String?) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let closeAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        alertController.addAction(closeAction)
+        present(alertController, animated: true, completion: nil)
+    }
 }

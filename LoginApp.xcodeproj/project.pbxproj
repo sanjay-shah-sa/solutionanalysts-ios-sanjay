@@ -23,6 +23,7 @@
 		CE956C9F25A19F5200C29EF8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C9E25A19F5200C29EF8 /* AuthService.swift */; };
 		CE956CA125A19F9500C29EF8 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956CA025A19F9500C29EF8 /* DateFormatter.swift */; };
 		CE956CA325A19FB400C29EF8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956CA225A19FB400C29EF8 /* Const.swift */; };
+		CE956CA825A1AFCF00C29EF8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956CA725A1AFCF00C29EF8 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		CE956C9E25A19F5200C29EF8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CE956CA025A19F9500C29EF8 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		CE956CA225A19FB400C29EF8 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		CE956CA725A1AFCF00C29EF8 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		F12A6903F96392A80DF2D1ED /* Pods_LoginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 		CE956C7125A1856500C29EF8 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE956CA625A1AFC500C29EF8 /* Helper */,
 				CE956C8B25A1871600C29EF8 /* Service */,
 				CE956C8A25A1870800C29EF8 /* Const */,
 				CE956C8925A1870000C29EF8 /* Extensions */,
@@ -155,6 +158,14 @@
 				CE956C9E25A19F5200C29EF8 /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		CE956CA625A1AFC500C29EF8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CE956CA725A1AFCF00C29EF8 /* Helper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		F1B1FB78147FB4CE16A681C7 /* Pods */ = {
@@ -291,6 +302,7 @@
 				CE956C9B25A19F3600C29EF8 /* TargetType.swift in Sources */,
 				CE956C8D25A1877700C29EF8 /* BaseVC.swift in Sources */,
 				CE956C9F25A19F5200C29EF8 /* AuthService.swift in Sources */,
+				CE956CA825A1AFCF00C29EF8 /* Helper.swift in Sources */,
 				CE956C9325A193F000C29EF8 /* User.swift in Sources */,
 				CE956C8F25A1878E00C29EF8 /* LoginVC.swift in Sources */,
 			);

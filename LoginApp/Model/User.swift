@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: - User Response Model
 public struct UserRes: Codable {
     public var result: Int?
     public var errorMessage: String?
@@ -18,10 +19,12 @@ public struct UserRes: Codable {
     }
 }
 
+// MARK: - User Data Model
 public struct UserData: Codable {
     public var user: User?
 }
 
+// MARK: - User Model
 public struct User: Codable {
     public var userId: Int?
     public var userName: String?
@@ -43,7 +46,9 @@ public struct User: Codable {
             throw DecodingError.dataCorruptedError(
                 forKey: .createdAt,
                 in: container,
-                debugDescription: "Date string does not match format expected by formatter.")
+                debugDescription: Const.Error.dateFormatError)
         }
+        self.userId = try container.decode(Int.self, forKey: .userId)
+        self.userName = try container.decode(String.self, forKey: .userName)
     }
 }

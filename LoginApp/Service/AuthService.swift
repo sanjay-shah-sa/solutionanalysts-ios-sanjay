@@ -33,7 +33,8 @@ extension AuthService: TargetType {
     var parameters: [String : Any] {
         switch self {
         case .login(let email, let password):
-            return ["email": email, "password": password]
+            return [Const.Keys.email: email,
+                    Const.Keys.password: password]
         }
     }
 
