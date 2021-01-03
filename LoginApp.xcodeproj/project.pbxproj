@@ -14,6 +14,15 @@
 		CE956C7F25A1856800C29EF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE956C7D25A1856800C29EF8 /* LaunchScreen.storyboard */; };
 		CE956C8D25A1877700C29EF8 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C8C25A1877700C29EF8 /* BaseVC.swift */; };
 		CE956C8F25A1878E00C29EF8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C8E25A1878E00C29EF8 /* LoginVC.swift */; };
+		CE956C9125A193DD00C29EF8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C9025A193DD00C29EF8 /* LoginViewModel.swift */; };
+		CE956C9325A193F000C29EF8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C9225A193F000C29EF8 /* User.swift */; };
+		CE956C9725A19F1B00C29EF8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C9625A19F1B00C29EF8 /* String.swift */; };
+		CE956C9925A19F2500C29EF8 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C9825A19F2500C29EF8 /* URL.swift */; };
+		CE956C9B25A19F3600C29EF8 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C9A25A19F3600C29EF8 /* TargetType.swift */; };
+		CE956C9D25A19F4500C29EF8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C9C25A19F4500C29EF8 /* UIViewController.swift */; };
+		CE956C9F25A19F5200C29EF8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956C9E25A19F5200C29EF8 /* AuthService.swift */; };
+		CE956CA125A19F9500C29EF8 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956CA025A19F9500C29EF8 /* DateFormatter.swift */; };
+		CE956CA325A19FB400C29EF8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE956CA225A19FB400C29EF8 /* Const.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +36,15 @@
 		CE956C8025A1856800C29EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE956C8C25A1877700C29EF8 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		CE956C8E25A1878E00C29EF8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CE956C9025A193DD00C29EF8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CE956C9225A193F000C29EF8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE956C9625A19F1B00C29EF8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CE956C9825A19F2500C29EF8 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		CE956C9A25A19F3600C29EF8 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		CE956C9C25A19F4500C29EF8 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CE956C9E25A19F5200C29EF8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CE956CA025A19F9500C29EF8 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		CE956CA225A19FB400C29EF8 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		F12A6903F96392A80DF2D1ED /* Pods_LoginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +107,7 @@
 		CE956C8625A186DB00C29EF8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CE956C9025A193DD00C29EF8 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -105,6 +124,7 @@
 		CE956C8825A186F400C29EF8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE956C9225A193F000C29EF8 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +132,11 @@
 		CE956C8925A1870000C29EF8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CE956C9625A19F1B00C29EF8 /* String.swift */,
+				CE956C9825A19F2500C29EF8 /* URL.swift */,
+				CE956C9A25A19F3600C29EF8 /* TargetType.swift */,
+				CE956C9C25A19F4500C29EF8 /* UIViewController.swift */,
+				CE956CA025A19F9500C29EF8 /* DateFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,6 +144,7 @@
 		CE956C8A25A1870800C29EF8 /* Const */ = {
 			isa = PBXGroup;
 			children = (
+				CE956CA225A19FB400C29EF8 /* Const.swift */,
 			);
 			path = Const;
 			sourceTree = "<group>";
@@ -126,6 +152,7 @@
 		CE956C8B25A1871600C29EF8 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CE956C9E25A19F5200C29EF8 /* AuthService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -254,8 +281,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE956C9725A19F1B00C29EF8 /* String.swift in Sources */,
+				CE956C9125A193DD00C29EF8 /* LoginViewModel.swift in Sources */,
+				CE956C9D25A19F4500C29EF8 /* UIViewController.swift in Sources */,
 				CE956C7325A1856500C29EF8 /* AppDelegate.swift in Sources */,
+				CE956C9925A19F2500C29EF8 /* URL.swift in Sources */,
+				CE956CA325A19FB400C29EF8 /* Const.swift in Sources */,
+				CE956CA125A19F9500C29EF8 /* DateFormatter.swift in Sources */,
+				CE956C9B25A19F3600C29EF8 /* TargetType.swift in Sources */,
 				CE956C8D25A1877700C29EF8 /* BaseVC.swift in Sources */,
+				CE956C9F25A19F5200C29EF8 /* AuthService.swift in Sources */,
+				CE956C9325A193F000C29EF8 /* User.swift in Sources */,
 				CE956C8F25A1878E00C29EF8 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

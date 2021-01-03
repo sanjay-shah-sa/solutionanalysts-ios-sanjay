@@ -90,6 +90,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailErrorLabel" destination="nay-Ej-KZd" id="am9-JK-l7P"/>
+                        <outlet property="emailTextField" destination="q38-ys-rBT" id="wdh-PA-Ekl"/>
+                        <outlet property="loginButton" destination="L5K-f4-K9h" id="aAM-CF-KOz"/>
+                        <outlet property="passwordErrorLabel" destination="kbQ-Fr-Cob" id="ylb-xP-Cfp"/>
+                        <outlet property="passwordTextField" destination="nxD-c5-sRd" id="Bri-B3-1X5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
